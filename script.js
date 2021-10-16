@@ -67,3 +67,11 @@ reset.addEventListener('click',()=>{
     document.getElementsByClassName('info')[0].innerText = `Turn For ${turn}`;
 })
 
+document.getElementById('musicButton').addEventListener('click',()=>{
+    if(music.paused){
+        music.play();
+    }
+    else{
+        music.pause();
+    }
+})
